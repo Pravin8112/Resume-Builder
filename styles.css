@@ -1,0 +1,135 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #edf6f9;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the Resume Builder */
+.container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #006d77;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Grid Layout for Form and Preview */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #023047;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #b0c4c7;
+  border-radius: 8px;
+  background-color: #f1f9f9;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #00b4d8;
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Preview Section */
+.preview {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #bcd4d6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.preview h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #006d77;
+}
+
+.preview p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.preview section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #028090;
+  margin-top: 1rem;
+}
+
+/* Button */
+button {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #00b4d8;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0096c7;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Additional Utility Classes */
+.text-center {
+  text-align: center;
+}
